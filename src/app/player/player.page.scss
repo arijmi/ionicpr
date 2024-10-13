@@ -1,0 +1,66 @@
+/* Page Styles */
+
+$background-color: #e0f7fa; // Light blue background for a calming effect
+$header-bg: #4dd0e1; // Slightly darker blue for the header
+$primary-color:  #4a90e2; // Dark teal for accents
+$text-color: #004d40; // Dark color for text
+$input-bg: rgba(255, 255, 255, 0.8); // Light background for inputs
+$button-bg: $primary-color; // Button background
+$button-hover-bg: darken($primary-color, 10%); // Darker button on hover
+
+ion-header {
+  background-color: $header-bg;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+ion-toolbar {
+  ion-title {
+    font-size: 2rem;
+    color: $primary-color;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+ion-content {
+  background-color: $background-color; // Light blue background for content
+  padding: 20px;
+
+  audio {
+    width: 100%; // Make audio player responsive
+    margin-bottom: 20px; // Space below audio player
+    border-radius: 8px; // Soft corners
+    background-color: $input-bg; // Light background
+    padding: 10px; // Padding for the audio element
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Shadow for depth
+  }
+
+  ion-item {
+    margin: 15px 0; // Margin for spacing
+    border-radius: 8px; // Soft corners
+    background-color: $input-bg; // Light background for the input
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); // Shadow for depth
+
+    ion-label {
+      color: $text-color; // Dark label for contrast
+      font-weight: bold; // Bold label text
+    }
+
+    ion-input {
+      background-color: $input-bg; // Light background for the input
+      color: $text-color; // Dark text for input
+      border: none; // No border for a cleaner look;
+    }
+  }
+
+  ion-button {
+    background-color: $button-bg; // Primary button color
+    color: #eff3f7; // White text for the button
+    margin-top: 10px; // Space above button
+    border-radius: 8px; // Soft corners
+
+    &:hover {
+      background-color: $button-hover-bg; // Darker on hover
+    }
+  }
+}

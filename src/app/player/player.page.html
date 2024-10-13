@@ -1,0 +1,22 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{ sound?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <audio #audioPlayer controls>
+    <source [src]="audioSrc" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <ion-item>
+    <ion-label>Set Timer (minutes)</ion-label>
+    <ion-input type="number" [(ngModel)]="timer"></ion-input>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="startTimer()" >Start Timer</ion-button>
+  
+</ion-content>
+

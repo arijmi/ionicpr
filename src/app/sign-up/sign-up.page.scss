@@ -1,0 +1,81 @@
+ion-header {
+    background-color: #4c5f90; // Elegant deep blue for the header
+    ion-toolbar {
+      color: #4c5f90; // White text for contrast
+  
+      ion-title {
+        font-size: 1.8em; // Increase the font size for the title
+        font-weight: bold; // Make the title bold
+        text-align: center; // Center the title
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); // Add a subtle shadow for depth
+        margin: 0; // Remove default margin
+      }
+    }
+  }
+  
+  ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #7f84a3 0%, #948b8b 100%); // Subtle gradient background
+  
+    form {
+        margin-top: 80px;
+      max-height: 700px;
+      max-width: 600px; // Centering the form
+      background: rgba(7, 46, 156, 0.95); // Slightly transparent white background
+      border-radius: 10px; // Rounded corners
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Light shadow for depth
+      padding: 70px;
+  
+      ion-item {
+        margin-bottom: 15px; // Space between items
+      }
+  
+      ion-label {
+        font-size: 1.1em; // Slightly larger label text
+        color: #4c5f90; // Darker color for labels
+      }
+  
+      ion-input {
+        font-size: 1em; // Input text size
+        border: 1px solid #4c5f90; // Subtle border for inputs
+        border-radius: 5px; // Rounded edges for inputs
+        padding: 10px; // Padding for better touch area
+      }
+  
+      ion-button {
+        margin-top: 15px; // Spacing above the button
+        background-color: #4c5f90; // Button color
+        color: rgb(255, 255, 255); // Button text color
+        border-radius: 25px; // More rounded button
+        height: 50px; // Adequate button height
+        font-weight: bold; // Bold button text
+        transition: background-color 0.3s, transform 0.2s; // Smooth transition effects
+  
+        &:hover {
+          background-color: #365a8d; // Darker button color on hover
+          transform: scale(1.05); // Slightly enlarges on hover
+        }
+      }
+    }
+  
+    ion-row {
+      margin-top: 20px; // Spacing above the row
+      text-align: center; // Center text alignment
+  
+      p {
+        color: #4c5f90; // Text color
+        font-size: 0.9em; // Font size for the paragraph
+  
+        a {
+          color: #4c5f90; // Link color
+          text-decoration: underline; // Underlined link
+          font-weight: bold; // Bold link text
+        }
+      }
+    }
+  }
+  

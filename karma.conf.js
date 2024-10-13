@@ -1,6 +1,7 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
+
 module.exports = function (config) {
   config.set({
     basePath: '',
@@ -11,7 +12,13 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma')
+
     ],
+    devServer: {
+      headers: {
+        'Accept-Ranges': 'none' // Disable Range requests
+      }
+    },
     client: {
       jasmine: {
         // you can add configuration options for Jasmine here
@@ -41,4 +48,5 @@ module.exports = function (config) {
     singleRun: false,
     restartOnFileChange: true
   });
+  
 };

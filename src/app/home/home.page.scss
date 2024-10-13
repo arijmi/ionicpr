@@ -1,27 +1,55 @@
-#container {
-  text-align: center;
+/* Page Styles */
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+$primary-color: #4a90e2; // Main color for buttons and highlights
+$background-color: #3713ab; // Light background for content
+$text-color: #333; // Dark text for readability
+$header-bg: rgba(107, 79, 230, 0.9); // Translucent header background
+
+ion-header {
+  background: $header-bg;
+  backdrop-filter: blur(10px);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-toolbar {
+  ion-title {
+    font-size: 1.8rem;
+    color: $primary-color;
+    text-align: center;
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+ion-content {
+  background-color: rgb(170, 166, 166);
+  
 
-  color: #8c8c8c;
+    // No need to redefine background unless you want a different effect
+  
 
-  margin: 0;
-}
+  ion-list {
+    padding: 0;
 
-#container a {
-  text-decoration: none;
+    ion-item {
+      background-color:  #4a90e2;
+      border-radius: 10px;
+      margin: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      &.ion-activatable {
+        --background: transparent; // Remove background color on click
+      }
+
+      .sound-name {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $text-color;
+      }
+    }
+  }
 }
